@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		nav {
+			background-color: #eee;
+			padding: 10px;
+			text-align: center;
+		}
+		nav a {
+			display: inline-block;
+			padding: 10px;
+			color: #333;
+			text-decoration: none;
+			font-weight: bold;
+			transition: color 0.3s;
+		}
+		nav a:hover {
+			color: #666;
+		}
+		.banner {
+			background-image: url("slider.png");
+			background-size: cover;
+			background-position: center;
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.banner h2 {
+			font-size: 50px;
+			color:orangered;
+			text-shadow: 1px 1px #333;
+		}
+		section {
+			padding: 50px 50px;
+			text-align: center;
+		}
+		section h2 {
+			font-size: 36px;
+			margin-bottom: 40px;
+		}
+		section p {
+			font-size: 18px;
+			line-height: 1.5;
+		}
+		section:nth-of-type(even) {
+			background-color: #f8f8f8;
+		}
+		section:nth-of-type(odd) {
+			background-color: #fff;
+		}
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+
+		* {
+		box-sizing: border-box;
+		}
+
+		/* Create three columns of equal width */
+		.columns {
+		float: left;
+		width: 33.3%;
+		padding: 8px;
+		}
+
+		/* Style the list */
+		.price {
+		list-style-type: none;
+		border: 1px solid #eee;
+		margin: 0;
+		padding: 0;
+		-webkit-transition: 0.3s;
+		transition: 0.3s;
+		}
+
+		/* Add shadows on hover */
+		.price:hover {
+		box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+		}
+
+		/* Pricing header */
+		.price .header {
+		background-color: #111;
+		color: white;
+		font-size: 25px;
+		}
+
+		/* List items */
+		.price li {
+		border-bottom: 1px solid #eee;
+		padding: 20px;
+		text-align: center;
+		}
+
+		/* Grey list item */
+		.price .grey {
+		background-color: #eee;
+		font-size: 20px;
+		}
+
+		/* The "Sign Up" button */
+		.button {
+		background-color: #04AA6D;
+		border: none;
+		color: white;
+		padding: 10px 25px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 18px;
+		}
+
+		/* Change the width of the three columns to 100%
+		(to stack horizontally on small screens) */
+		@media only screen and (max-width: 600px) {
+		.columns {
+			width: 100%;
+		}
+		}
+		* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#contact div{
+	text-align: left;
+}
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav>
+		<a href="#home">Home</a>
+		<a href="#about">About</a>
+		<a href="#courses">Courses</a>
+		<a href="#contact">Contact</a>
+	</nav>
+	<div class="banner" id="home">
+		<h2>Welcome to EDU-CATOR</h2>
+	</div>
+	<section id="about">
+		<h2>About</h2>
+		<div class="row">
+			<div class="col-sm-6"><p>EDU-CATOR is one of the 23 Centres of Excellence for training, research and development in science, engineering and technology in India. Established as College of Engineering in 1961, the Institute was later declared as an Institution of National Importance under the “Institutes of Technology (Amendment) Act, 1963” and was renamed as EDU-CATOR. It was then accorded the status of a Deemed University with powers to decide its own academic policy, to conduct its own examinations, and to award its own degrees. Since its inception, over 48000 have graduated from IIT Delhi in various disciplines including Engineering, Physical Sciences, Management and Humanities & Social Sciences. Of these, nearly 5070 received Ph.D. degrees. The number of students who graduated with B.Tech. degree is over 15738. The rest obtained Master’s Degree in Engineering, Sciences and Business Administration. These alumni today work as scientists, technologists, business managers and entrepreneurs. There are several alumni who have moved away from their original disciplines and have taken to administrative services, active politics or are with NGOs. In doing so, they have contributed significantly to building of this nation, and to industrialization around the world.</p></div>
+			<div class="col-sm-6"><img src="slider4.jpg" height="400"></div>
+		  </div>
+		<div>	
+			
+	</section>
+	<section id="courses" style="
+    height: 700px;
+">
+		<h2>Courses</h2>
+		<div class="columns">
+			<ul class="price">
+			  <li class="header">Course</li>
+			  <li class="grey">$ 9.99 / year</li>
+			  <li>10GB Storage</li>
+			  <li>10 Emails</li>
+			  <li>10 Domains</li>
+			  <li>1GB Bandwidth</li>
+			  <li class="grey"><a href="#" class="button">Sign Up</a></li>
+			</ul>
+		</div>
+		<div class="columns">
+			<ul class="price">
+			  <li class="header">Basic</li>
+			  <li class="grey">$ 9.99 / year</li>
+			  <li>10GB Storage</li>
+			  <li>10 Emails</li>
+			  <li>10 Domains</li>
+			  <li>1GB Bandwidth</li>
+			  <li class="grey"><a href="#" class="button">Sign Up</a></li>
+			</ul>
+		</div>
+		<div class="columns">
+			<ul class="price">
+			  <li class="header">Basic</li>
+			  <li class="grey">$ 9.99 / year</li>
+			  <li>10GB Storage</li>
+			  <li>10 Emails</li>
+			  <li>10 Domains</li>
+			  <li>1GB Bandwidth</li>
+			  <li class="grey"><a href="#" class="button">Sign Up</a></li>
+			</ul>
+		</div>
+	</section>
+	<section id="contact">
+		<h2>Contact</h2>
+		<div class="container">
+			<form action="">
+			  <label for="fname">First Name</label>
+			  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+		  
+			  <label for="lname">Last Name</label>
+			  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		  
+			  <label for="country">Country</label>
+			  <select id="country" name="country">
+				<option value="australia">Australia</option>
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+			  </select>
+		  
+			  <label for="subject">Subject</label>
+			  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+		  
+			  <input type="submit" value="Submit">
+			</form>
+		  </div>
+	</section>
+	<footer>
+		<p>&copy; 2023 My Landing Page. All rights reserved.</p>
+	</footer>
+</body>
+</html>
